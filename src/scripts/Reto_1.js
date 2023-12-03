@@ -1,4 +1,4 @@
-// Mi solucion
+// Mi solucion, Puntos: 10, Complejidad cognitiva: 4
 function findFirstRepeated(gifts) {
     let counterToys = {};
 
@@ -19,8 +19,8 @@ function findFirstRepeated(gifts) {
     return -1;
 }
 
-// Alternativa usando seen
-function findFirstRepeated(gifts) {
+// Alternativa usando seen, Puntos: 110, Complejidad cognitiva: 3
+function findFirstRepeatedSeen(gifts) {
     let seen = {};
 
     for (let i = 0; i < gifts.length; i++) {

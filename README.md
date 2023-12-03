@@ -1,4 +1,4 @@
-# AdventJS Mis Soluciones 🫠
+# AdventJS 2023, Mis Soluciones 🫠
 
 # Reto #1: 🎁 ¡Primer regalo repetido!
 
@@ -31,9 +31,9 @@ console.log(firstRepeatedId3) // 5
 
 # Reto #2: 🏭 Ponemos en marcha la fábrica
 
-En el taller de Santa, los elfos tienen una **lista de regalos** que desean fabricar y un conjunto limitado de materiales.
+En el taller de Santa, los elfos tienen una **`lista de regalos`** que desean fabricar y un conjunto limitado de materiales.
 
-Los _regalos son cadenas de texto_ y los materiales son caracteres. Tu tarea es escribir una función que, dada una lista de regalos y los materiales disponibles, devuelva una **lista de los regalos que se pueden fabricar**.
+Los _regalos son cadenas de texto_ y los materiales son caracteres. Tu tarea es escribir una función que, dada una lista de regalos y los materiales disponibles, devuelva una **`lista de los regalos que se pueden fabricar`**.
 
 Un regalo se puede fabricar si contamos con todos los materiales necesarios para fabricarlo.
 
@@ -56,3 +56,31 @@ const materials = 'psli'
 
 manufacture(gifts, materials) // []
 ```
+
+# Reto #3: 😏 El elfo travieso
+
+En el taller de Santa, **`un elfo travieso`** ha estado jugando en la cadena de fabricación de regalos, añadiendo o eliminando un paso no planificado.
+
+Tienes la secuencia original de pasos en la fabricación _original_ y la secuencia modificada _modified_ que puede incluir un paso extra o faltar un paso.
+
+Tu tarea **`es escribir una función que identifique y devuelva el primer paso extra que se ha añadido o eliminado en la cadena de fabricación`**. Si no hay ninguna diferencia entre las secuencias, devuelve una cadena vacía.
+
+```
+const original = 'abcd'
+const modified = 'abcde'
+findNaughtyStep(original, modified) // 'e'
+
+const original = 'stepfor'
+const modified = 'stepor'
+findNaughtyStep(original, modified) // 'f'
+
+const original = 'abcde'
+const modified = 'abcde'
+findNaughtyStep(original, modified) // ''
+```
+
+A tener en cuenta:
+
+-   Siempre habrá un paso de diferencia o ninguno.
+-   La modificación puede ocurrir en cualquier lugar de la cadena.
+-   La secuencia _original_ puede estar vacía
