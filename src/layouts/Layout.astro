@@ -1,6 +1,7 @@
 ---
 import "@/styles.css";
 import Navbar from "@/components/Navbar.astro";
+import Nieve from "@/components/Nieve.astro";
 interface Props {
     title: string;
 }
@@ -18,13 +19,17 @@ const { title } = Astro.props;
         <meta name="generator" content={Astro.generator} />
         <title>{title}</title>
     </head>
-    <body
-        class="bg-gradient-to-t from-green-700 via-green-800 to-green-900 min-h-screen"
-    >
+    <body class="bg-gradient-to-t from-green-700 via-green-800 to-green-900">
+        <Nieve />
+
         <main>
             <Navbar />
             <slot />
         </main>
+
+        <script>
+            import "../scripts/snow.js";
+        </script>
     </body>
 </html>
 

@@ -1,0 +1,30 @@
+<div id="snowfall"></div>
+
+<style is:global>
+    #snowfall {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        pointer-events: none;
+        z-index: -1;
+    }
+
+    .snowflake {
+        position: absolute;
+        background: #fff; /* Color de los copos de nieve */
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        animation: snowfall 5s linear infinite;
+    }
+
+    @keyframes snowfall {
+        0% {
+            transform: translateY(-100px);
+        }
+
+        100% {
+            transform: translateY(110vh);
+        }
+    }
+</style>
