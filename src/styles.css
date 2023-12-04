@@ -1,0 +1,13 @@
+/* scrollbar styles */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #154e06;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b94848;
+    border-radius: 10px;
+}

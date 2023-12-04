@@ -84,3 +84,9 @@ A tener en cuenta:
 -   Siempre habrá un paso de diferencia o ninguno.
 -   La modificación puede ocurrir en cualquier lugar de la cadena.
 -   La secuencia _original_ puede estar vacía
+
+# Creditos por las imagenes
+
+1. <a href="https://www.flaticon.es/stickers-gratis/navidad" title="navidad stickers">Navidad stickers creadas por Stickers - Flaticon</a>
+
+2. <a href="https://www.flaticon.es/iconos-gratis/chucheria" title="chuchería iconos">Chuchería iconos creados por Freepik - Flaticon</a>

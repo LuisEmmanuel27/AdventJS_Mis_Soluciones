@@ -1,0 +1,28 @@
+---
+import { Image } from "astro:assets";
+import santa from "@/assets/navidad.png";
+import gato from "@/assets/gato.png";
+---
+
+<section id="banner" class="h-[80vh] flex items-center justify-center gap-24">
+    <Image
+        src={santa}
+        alt="santa"
+        width={300}
+        height={300}
+        class="animate-columpiar"
+    />
+
+    <div class="title text-center">
+        <h1 class="text-8xl text-yellow-400">AdventJS 2023</h1>
+        <h2 class="text-5xl text-yellow-400">❄️ Mis Soluciones ❄️</h2>
+    </div>
+
+    <Image
+        src={gato}
+        alt="gato"
+        width={300}
+        height={300}
+        class="animate-columpiar"
+    />
+</section>
