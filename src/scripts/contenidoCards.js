@@ -1,22 +1,26 @@
 export const contenidoCards = [
     {
+        id: 1,
         titulo: "Ejercicio 1",
         imagen: "imagen",
-        url: "url"
+        url: "problema1"
     },
     {
-        titulo: "Ejercicio 1",
+        id: 2,
+        titulo: "Ejercicio 2",
         imagen: "imagen",
-        url: "url"
+        url: "problema2"
     },
     {
-        titulo: "Ejercicio 1",
+        id: 3,
+        titulo: "Ejercicio 3",
         imagen: "imagen",
-        url: "url"
+        url: "problema3"
     },
     {
-        titulo: "Ejercicio 1",
+        id: 4,
+        titulo: "Ejercicio 4",
         imagen: "imagen",
-        url: "url"
+        url: "problema4"
     },
 ]

@@ -1,0 +1,10 @@
+---
+import LayoutProblemas from "@/layouts/LayoutProblemas.astro";
+import Problema from "@/components/problemas/Problema.astro";
+
+const { id } = Astro.params;
+---
+
+<LayoutProblemas title="problema 1">
+    <Problema id={id} />
+</LayoutProblemas>
