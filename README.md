@@ -275,3 +275,43 @@ console.log(result1)
 
   11b: 11 regalos tipo 'b' se empaquetarían en 1 caja y sobraría 1 regalo, resultando en 1 caja suelta {b} y una bolsa con 1 regalo (b)
 ```
+
+# Reto #9: Alterna las luces
+
+Están encendiendo las **`luces de Navidad`** 🎄 en la ciudad y, como cada año, ¡hay que arreglarlas!
+
+Las luces son de dos colores: 🔴 y 🟢 . Para que el efecto sea el adecuado, **`siempre deben estar alternadas`**. Es decir, si la primera luz es roja, la segunda debe ser verde, la tercera roja, la cuarta verde, etc.
+
+Nos han pedido que escribamos una función `adjustLights` que, dado un array de strings con el color de cada luz (representados con los emojis 🔴 para el rojo y 🟢 para el verde), devuelva el **`número mínimo`** de luces que hay que cambiar para que estén los colores alternos.
+
+```
+adjustLights(['🟢', '🔴', '🟢', '🟢', '🟢'])
+// -> 1 (cambias la cuarta luz a 🔴)
+
+adjustLights(['🔴', '🔴', '🟢', '🔴', '🟢'])
+// -> 1 (cambia la primera luz a verde)
+
+adjustLights(['🔴', '🔴', '🟢', '🟢', '🔴'])
+// -> 2 (cambias la segunda luz a 🟢 y la tercera a 🔴)
+
+adjustLights(['🟢', '🔴', '🟢', '🔴', '🟢'])
+// -> 0 (ya están alternadas)
+
+adjustLights(['🔴', '🔴', '🔴'])
+// -> 1 (cambias la segunda luz a 🟢)
+```
+
+# Reto #14: 🚨 Evita la alarma
+
+Con el tema de las redes sociales, _Santa Claus_ **`tiene pánico que los niños se despierten mientras él está repartiendo regalos en sus casos`**, usen el móvil para grabarlo y se haga viral en TikTok.
+
+Quiere evitarlo a toda costa. Cada casa en esa calle tiene un número de regalos preparados. Sin embargo, **`las casas tienen un sistema de seguridad conectado entre casas adyacentes`**, por lo que **`no puede dejar los regalos en dos casas seguidas`**, o se activará la alarma que alertará a los niños.
+
+Dada un **`array de enteros no negativos regalos`** que representa la cantidad de regalos en cada casa, tu tarea es ayudar a Papá Noel a determinar la **`máxima cantidad de regalos que puede entregar`** en una noche sin activar ninguna alarma.
+
+```
+maxGifts([2, 4, 2]) // 4 (4)
+maxGifts([5, 1, 1, 5]) // 10 (5 + 5)
+maxGifts([4, 1, 1, 4, 2, 1]) // 9 (4 + 4 + 1)
+maxGifts([1, 3, 1, 3, 100]) // 103 (3 + 100)
+```
